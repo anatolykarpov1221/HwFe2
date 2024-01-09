@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+</head>
+<body>
+    <h2>Регистрационная форма</h2>
+    <form method="get">
+        <label>
+            <p> Имя </p>
+            <input type="text" name="name" placeholder="укажите Имя">
+        </label>
+        <label>
+            <p> Фамилия </p>
+            <input type="text" name="lastname" placeholder="укажите Фамилия">
+        </label>
+        <label>
+            <p>Электронная почта</p>
+            <input type="email" name="email" placeholder="Ваша эл.почта">
+        </label>
+        <label >
+            <p>пароль</p>
+            <input type="password" name="password" placeholder="пароль">
+        </label>
+        <label>
+            <p>выберите Ваш пол</p>
+            <select name="gender" required>
+                <option value="man">мужской</option>
+                <option value="woman">женский</option>
+                <option value="other">эстетический</option>
+            </select>
+        </label>
+        <label >
+                <p>Дата рождения</p>
+                <input type="date" name="birthday" placeholder="день рождения">
+        </label>
+        <label >
+            <p>Согласие с условиями использования</p>
+            <input type="checkbox" name="agree" value="yes" >
+            <span>Согласен/а</span>
+        </label>
+        <label >
+            <input type="checkbox" name="agree" value="no" >
+            <span>Не согласен/а</span >
+        </label>
+         <p>отправить форму запроса</p> <!-- как  get -->
+        <div>
+            <button>Зарегистрироваться</button>
+        </div>
+    </form>
+</body>
+</html>
